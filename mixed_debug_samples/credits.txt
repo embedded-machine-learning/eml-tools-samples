@@ -1,0 +1,5 @@
+## Dataset
+Single images were extracted from the TownCentre dataset: (http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/project.html#datasets) 
+It is used for training our pedestrian detector.
+
+For the pedestrian like datasets, thanks http://www.milanton.de/data/#data
