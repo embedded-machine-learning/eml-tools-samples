@@ -3,15 +3,18 @@ echo # CDLEML Process TF2 Object Detection API
 echo #==============================================#
 
 :: Constant Definition
-set USERNAME=wendt
 set USEREMAIL=alexander.wendt@tuwien.ac.at
-set MODELNAME=ssd_mobilenet_v2_R300x300_D100_coco17_pets
+::set MODELNAME=tf2oda_efficientdetd2_768_576_coco17_pedestrian
 set HARDWARENAME=Inteli7-6700HQ-CPU
 set PYTHONENV=tf24
-::set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
-set SCRIPTPREFIX=..\..\..
-set LABELMAP=pets_label_map.pbtxt
+::set SCRIPTPREFIX=..\..\..
+set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
+set LABELMAP=pedestrian_label_map.pbtxt
 
+::Extract the model name from the current file name
+set THISFILENAME=%~n0
+set MODELNAME=%THISFILENAME:tf2oda_inference_and_evaluation_from_saved_model_=%
+echo Current model name extracted from filename: %MODELNAME%
 
 :: Environment preparation
 echo Activate environment %PYTHONENV%
