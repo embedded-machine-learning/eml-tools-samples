@@ -9,7 +9,7 @@ set HARDWARENAME=Inteli7-6700HQ-CPU
 set PYTHONENV=tf24
 ::set SCRIPTPREFIX=..\..\..
 set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
-set LABELMAP=pedestrian_label_map.pbtxt
+set LABELMAP=pets_label_map.pbtxt
 
 ::Extract the model name from the current file name
 set THISFILENAME=%~n0
@@ -28,10 +28,7 @@ echo Inference from model
 python %SCRIPTPREFIX%\inference_evaluation\tf2oda_inference_from_saved_model.py ^
 --model_path "exported-models/%MODELNAME%/saved_model/" ^
 --image_dir "images/validation" ^
---labelmap "annotations/%LABELMAP%" ^
---output_dir="results/%MODELNAME%/validation_for_inference" ^
---xml_dir="results/%MODELNAME%/validation_for_inference" ^
---run_detection True ^
+--detections_out="results/%MODELNAME%/validation_for_inference/detections.csv" ^
 --latency_out="results/latency.csv" ^
 --min_score=0.5 ^
 --model_name=%MODELNAME% ^
