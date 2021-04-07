@@ -6,12 +6,11 @@ echo Execute this file in the base folder of your project
 
 :: Constants Definition
 set USEREMAIL=alexander.wendt@tuwien.ac.at
-set MODELNAME=ssd_mobilenet_v2_R300x300_D100_coco17_pets
-set MODELNAMESHORT=MobNetV2_300x300_D100
+set MODELNAME=tf2oda_ssdmobilenetv2_300x300_pets
+set MODELNAMESHORT=MobNetV2_300x300
 set HARDWARENAME=CPU_Intel_i5
 set PYTHONENV=tf24
-::set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
-set SCRIPTPREFIX=..\..\..
+set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
 set LABELMAP=pets_label_map.pbtxt
 
 :: Environment preparation

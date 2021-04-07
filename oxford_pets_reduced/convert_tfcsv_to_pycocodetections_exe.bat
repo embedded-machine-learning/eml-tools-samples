@@ -7,10 +7,10 @@ echo run this files in the root of a project
 :: Constants Definition
 set USERNAME=wendt
 set USEREMAIL=alexander.wendt@tuwien.ac.at
-set MODELNAME=ssd_mobilenet_v2_R300x300_D100_coco17_pets
+set MODELNAME=tf2oda_ssdmobilenetv2_300x300_pets
 set PYTHONENV=tf24
 set BASEPATH=.
-set SCRIPTPREFIX=..\..\..
+set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
 set LABELMAP=pets_label_map.pbtxt
 
 :: Environment preparation

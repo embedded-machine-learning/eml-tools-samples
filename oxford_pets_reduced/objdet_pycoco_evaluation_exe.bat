@@ -5,10 +5,9 @@ echo #==============================================#
 :: Constants Definition
 set USERNAME=wendt
 set USEREMAIL=alexander.wendt@tuwien.ac.at
-set MODELNAME=ssd_mobilenet_v2_R300x300_D100_coco17_pets
+set MODELNAME=tf2oda_ssdmobilenetv2_300x300_pets
 set PYTHONENV=tf24
-set BASEPATH=.
-set SCRIPTPREFIX=..\..\..
+set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
 set LABELMAP=pets_label_map.pbtxt
 
 :: Environment preparation
@@ -23,5 +22,5 @@ python %SCRIPTPREFIX%\inference_evaluation\objdet_pycoco_evaluation.py ^
 --groundtruth_file="annotations/coco_pets_validation_annotations.json" ^
 --detection_file="results/%MODELNAME%/validation_for_inference/coco_pets_detection_annotations.json" ^
 --output_file="results/performance.csv" ^
---model_name="SSD-MobileNet" ^
+--model_name=%MODELNAME% ^
 --hardware_name="Intel_CPU_i5"
