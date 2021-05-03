@@ -1,0 +1,7 @@
+Date;Model;Model_Short;Framework;Network;Resolution;Dataset;Custom_Parameters;Hardware;Hardware_Optimization;Batch_Size;Throughput;Mean_Latency;Latencies
+2021-05-04 00:28:18;tf2oda_ssdmobilenetv2_300x300_pets;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];CPU;OV_UNSPECIFIED;1;130.81;7.64;[None]
+2021-05-04 00:28:48;tf2oda_ssdmobilenetv2_300x300_pets;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];CPU;OV_UNSPECIFIED;1;130.81;7.64;[None]
+2021-05-04 00:34:09;tf2oda_ssdmobilenetv2_300x300_pets;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];CPU;OV_UNSPECIFIED;1;129.85;7.70;[None]
+2021-05-04 00:34:15;tf2oda_ssdmobilenetv2_300x300_pets;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];CPU;OV_UNSPECIFIED;1;113.58;8.80;[None]
+2021-05-04 00:34:32;tf2oda_ssdmobilenetv2_300x300_pets;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];CPU;OV_UNSPECIFIED;1;128.43;7.79;[None]
+2021-05-04 00:34:38;tf2oda_ssdmobilenetv2_300x300_pets;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];CPU;OV_UNSPECIFIED;1;129.28;7.74;[None]
