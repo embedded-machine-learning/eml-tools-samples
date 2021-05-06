@@ -3,7 +3,7 @@ Command line parameters
 -d;CPU
 -b;1
 -api;sync
--niter;10000
+-niter;100
 -pc;
 -nireq;1
 --report_type;average_counters
@@ -15,16 +15,16 @@ target device;CPU
 API;sync
 precision;UNSPECIFIED
 batch size;1
-number of iterations;10000
+number of iterations;100
 number of parallel infer requests;1
 duration (ms);0
 
 Execution results
-read network time (ms);95.71
-load network time (ms);473.59
-first inference time (ms);12.11
-total execution time (ms);106449.28
-total number of iterations;10000
-latency (ms);11.44
-throughput;87.38
+read network time (ms);122.08
+load network time (ms);539.09
+first inference time (ms);10.53
+total execution time (ms);1122.34
+total number of iterations;100
+latency (ms);11.68
+throughput;85.62
 
