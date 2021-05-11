@@ -1,5 +1,9 @@
 Date;Model;Model_Short;Framework;Network;Resolution;Dataset;Custom_Parameters;Hardware;Hardware_Optimization;Batch_Size;Throughput;Mean_Latency;Latencies
-2021-05-06 19:20:01;tf2oda_ssdmobilenetv2_300x300_pets_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];CPU;OVFP16;1;104.33;9.59;[None]
-2021-05-06 19:20:54;tf2oda_ssdmobilenetv2_300x300_pets_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];GPU;OVFP16;1;87.01;11.49;[None]
-2021-05-06 19:20:58;tf2oda_ssdmobilenetv2_300x300_pets_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];CPU;OVFP32;1;85.62;11.68;[None]
-2021-05-06 19:21:52;tf2oda_ssdmobilenetv2_300x300_pets_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', []];GPU;OVFP32;1;64.91;15.41;[None]
+2021-05-11 15:22:02;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_CPU;OVFP16;1;106.92;9.35;
+2021-05-11 15:23:02;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_GPU;OVFP16;1;90.87;11.00;
+2021-05-11 15:23:05;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_CPU;OVFP32;1;122.51;8.16;
+2021-05-11 15:23:59;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_GPU;OVFP32;1;67.93;14.72;
+2021-05-11 15:24:03;tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;320x256;pedestrian;['1', 'sync', 'UNSPECIFIED'];Inteli7dp3510_CPU;OVFP16;1;127.82;7.82;
+2021-05-11 15:25:06;tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;320x256;pedestrian;['1', 'sync', 'UNSPECIFIED'];Inteli7dp3510_GPU;OVFP16;1;91.74;10.90;
+2021-05-11 15:25:09;tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;320x256;pedestrian;['1', 'sync', 'UNSPECIFIED'];Inteli7dp3510_CPU;OVFP32;1;109.27;9.15;
+2021-05-11 15:26:09;tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;320x256;pedestrian;['1', 'sync', 'UNSPECIFIED'];Inteli7dp3510_GPU;OVFP32;1;74.71;13.39;

@@ -1,0 +1,9 @@
+Date;Model;Model_Short;Framework;Network;Resolution;Dataset;Custom_Parameters;Hardware;Hardware_Optimization;Batch_Size;Throughput;Mean_Latency;Latencies
+2021-05-11 10:31:51;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];CPU;OVFP16;1;127.76;7.83;[None]
+2021-05-11 10:32:45;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];GPU;OVFP16;1;85.29;11.72;[None]
+2021-05-11 10:32:49;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];CPU;OVFP32;1;105.77;9.45;[None]
+2021-05-11 10:33:48;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];GPU;OVFP32;1;61.26;16.33;[None]
+2021-05-11 10:37:08;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];CPU;OVFP16;1;126.98;7.87;
+2021-05-11 10:38:00;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];GPU;OVFP16;1;92.16;10.85;
+2021-05-11 10:38:03;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];CPU;OVFP32;1;125.60;7.96;
+2021-05-11 10:38:54;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];GPU;OVFP32;1;68.18;14.67;
