@@ -52,7 +52,7 @@ echo #====================================#
 echo # Infer with OpenVino
 echo #====================================#
 python %SCRIPTPREFIX%\hardwaremodules\openvino\result_parser\test_write_results.py ^
---model exported-models-openvino/tf2oda_ssdmobilenetv2_300x300_pets_OVFP16/saved_model.xml ^
+--model exported-models-openvino/tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16/saved_model.xml ^
 --input=images/validation
 
 echo "Inference accuray finished"
