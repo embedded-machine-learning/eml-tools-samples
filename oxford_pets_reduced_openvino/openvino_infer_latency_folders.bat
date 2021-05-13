@@ -82,7 +82,7 @@ echo #====================================#
 echo # Convert Latencies
 echo #====================================#
 echo "Add measured latencies to result table"
-python %SCRIPTPREFIX%\hardwaremodules\openvino\latency_parser\openvino_latency_parser.py ^
+python %SCRIPTPREFIX%\hardwaremodules\openvino\openvino_latency_parser.py ^
 --avg_rep results/%MODELNAME%/%HARDWARENAME%/OpenVino_sync\benchmark_average_counters_report_saved_model_%HARDWARETYPE%_sync.csv ^
 --inf_rep results/%MODELNAME%/%HARDWARENAME%/OpenVino_sync\benchmark_report_saved_model_%HARDWARETYPE%_sync.csv ^
 --output_path results/latency.csv ^

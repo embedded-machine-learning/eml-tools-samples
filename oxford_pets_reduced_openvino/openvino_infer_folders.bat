@@ -3,12 +3,11 @@
 :main
 :: Constant Definition
 set USEREMAIL=alexander.wendt@tuwien.ac.at
-set MODELNAME=tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16
+::set MODELNAME=tf2oda_efficientdet_512x512_pedestrian_D0_LR02
 set PYTHONENV=tf24
 set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
 set LABELMAP=pets_label_map.pbtxt
 set HARDWARENAME=Inteli7dp3510
-set HARDWARETYPE=CPU
 
 ::OpenVino Constant Defintion
 ::Inference uses a different version than model conversion.
@@ -36,9 +35,19 @@ call conda activate %PYTHONENV%
 echo Setup OpenVino Variables %SETUPVARS%
 call %SETUPVARS%
 
-
-call :perform_inference
-
+::Use this method to use all folder names in the subfolder as models
+echo Convert files in the folder exported-models-openvino
+set MODELFOLDER=exported-models-openvino
+for /d %%D in (%MODELFOLDER%\*) do (
+	::For each folder name in exported models, 
+	set MODELNAME=%%~nxD
+	
+	for %%x in (CPU GPU) do (
+		::For each possible quantization
+		set HARDWARETYPE=%%x
+		call :perform_inference
+	)
+)
 goto :eof
 
 ::===================================================================::
@@ -50,6 +59,38 @@ echo Apply to model %MODELNAME% with precision %HARDWARETYPE%
 echo #====================================#
 echo # Infer with OpenVino
 echo #====================================#
+echo "Start latency inference"
+python %SCRIPTPREFIX%\hardwaremodules\openvino\run_pb_bench_sizes.py ^
+-openvino_path %OPENVINOINSTALLDIR% ^
+-hw %HARDWARETYPE% ^
+-batch_size 1 ^
+-api sync ^
+-niter 100 ^
+-xml exported-models-openvino/%MODELNAME%/saved_model.xml ^
+-output_dir="results/%MODELNAME%/%HARDWARENAME%/OpenVino"
+
+::-size [1,320,320,3] ^
+
+
+::-hw (CPU|MYRIAD)
+::-size (batch, width, height, channels=3)
+::-pb Frozen file
+
+echo #====================================#
+echo # Convert Latencies
+echo #====================================#
+echo "Add measured latencies to result table"
+python %SCRIPTPREFIX%\hardwaremodules\openvino\openvino_latency_parser.py ^
+--avg_rep results/%MODELNAME%/%HARDWARENAME%/OpenVino_sync\benchmark_average_counters_report_saved_model_%HARDWARETYPE%_sync.csv ^
+--inf_rep results/%MODELNAME%/%HARDWARENAME%/OpenVino_sync\benchmark_report_saved_model_%HARDWARETYPE%_sync.csv ^
+--output_path results/latency.csv ^
+--hardware_name %HARDWARENAME%
+::--save_new #Always append
+
+echo #====================================#
+echo # Infer with OpenVino
+echo #====================================#
+echo "Start accuracy/performance inference"
 python %SCRIPTPREFIX%\hardwaremodules\openvino\test_write_results.py ^
 --model_path="exported-models-openvino/%MODELNAME%/saved_model.xml" ^
 --image_dir="images/validation" ^
@@ -59,7 +100,7 @@ python %SCRIPTPREFIX%\hardwaremodules\openvino\test_write_results.py ^
 echo #====================================#
 echo # Convert Detections to Pascal VOC Format
 echo #====================================#
-echo Convert TF CSV Format (similar to voc) to Pascal VOC XML
+echo "Convert Tensorflow CSV Format (similar to voc) to Pascal VOC XML, which is used for visualizing images"
 python %SCRIPTPREFIX%\conversion\convert_tfcsv_to_voc.py ^
 --annotation_file="results/%MODELNAME%/%HARDWARENAME%/detections.csv" ^
 --output_dir="results/%MODELNAME%/%HARDWARENAME%/det_xmls" ^
@@ -76,15 +117,15 @@ python %SCRIPTPREFIX%\conversion\convert_tfcsv_to_pycocodetections.py ^
 echo #====================================#
 echo # Evaluate with Coco Metrics
 echo #====================================#
-
+echo "Evalute detections and ground truth with Coco detection metrics"
 python %SCRIPTPREFIX%\inference_evaluation\objdet_pycoco_evaluation.py ^
 --groundtruth_file="annotations/coco_pets_validation_annotations.json" ^
 --detection_file="results/%MODELNAME%/%HARDWARENAME%/%MODELNAME%_coco_detections.json" ^
 --output_file="results/performance.csv" ^
 --model_name=%MODELNAME% ^
---hardware_name=%HARDWARENAME%
+--hardware_name=%HARDWARENAME%_%HARDWARETYPE%
 
-echo "Inference accuray finished"
+echo "Inference finished"
 goto :eof
 
 :end

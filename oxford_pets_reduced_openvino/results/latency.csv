@@ -1,9 +1,9 @@
 Date;Model;Model_Short;Framework;Network;Resolution;Dataset;Custom_Parameters;Hardware;Hardware_Optimization;Batch_Size;Throughput;Mean_Latency;Latencies
-2021-05-11 15:22:02;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_CPU;OVFP16;1;106.92;9.35;
-2021-05-11 15:23:02;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_GPU;OVFP16;1;90.87;11.00;
-2021-05-11 15:23:05;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_CPU;OVFP32;1;122.51;8.16;
-2021-05-11 15:23:59;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_GPU;OVFP32;1;67.93;14.72;
-2021-05-11 15:24:03;tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;320x256;pedestrian;['1', 'sync', 'UNSPECIFIED'];Inteli7dp3510_CPU;OVFP16;1;127.82;7.82;
-2021-05-11 15:25:06;tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;320x256;pedestrian;['1', 'sync', 'UNSPECIFIED'];Inteli7dp3510_GPU;OVFP16;1;91.74;10.90;
-2021-05-11 15:25:09;tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;320x256;pedestrian;['1', 'sync', 'UNSPECIFIED'];Inteli7dp3510_CPU;OVFP32;1;109.27;9.15;
-2021-05-11 15:26:09;tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;320x256;pedestrian;['1', 'sync', 'UNSPECIFIED'];Inteli7dp3510_GPU;OVFP32;1;74.71;13.39;
+2021-05-13 13:59:15;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_CPU;OVFP16;1;127.46;7.85;
+2021-05-13 14:00:14;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_GPU;OVFP16;1;97.49;10.26;
+2021-05-13 14:01:12;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_CPU;OVFP32;1;126.08;7.93;
+2021-05-13 14:02:12;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_GPU;OVFP32;1;72.00;13.89;
+2021-05-13 14:07:36;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_CPU;OVFP16;1;123.06;8.13;
+2021-05-13 14:08:40;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_GPU;OVFP16;1;90.18;11.09;
+2021-05-13 14:09:39;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_CPU;OVFP32;1;123.92;8.07;
+2021-05-13 14:10:40;tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP32;ssdmobilenetv2;tf2oda;ssdmobilenetv2;300x300;pets;['1', 'sync', 'UNSPECIFIED', 'D100'];Inteli7dp3510_GPU;OVFP32;1;59.88;16.70;
