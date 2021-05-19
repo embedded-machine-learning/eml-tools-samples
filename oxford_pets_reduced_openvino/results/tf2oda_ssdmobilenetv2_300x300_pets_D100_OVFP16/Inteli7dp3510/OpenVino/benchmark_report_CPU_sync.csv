@@ -3,11 +3,11 @@ Command line parameters
 -d;CPU
 -b;1
 -api;sync
--niter;100
+-niter;1000
 -pc;
 -nireq;1
 --report_type;average_counters
---report_folder;results/tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16/Inteli7dp3510/OpenVino_sync
+--report_folder;results/tf2oda_ssdmobilenetv2_300x300_pets_D100_OVFP16/Inteli7dp3510/OpenVino
 
 Configuration setup
 topology;saved_model
@@ -15,16 +15,16 @@ target device;CPU
 API;sync
 precision;UNSPECIFIED
 batch size;1
-number of iterations;100
+number of iterations;1000
 number of parallel infer requests;1
 duration (ms);0
 
 Execution results
-read network time (ms);113.32
-load network time (ms);487.26
-first inference time (ms);10.50
-total execution time (ms);849.76
-total number of iterations;100
+read network time (ms);89.82
+load network time (ms);530.25
+first inference time (ms);11.45
+total execution time (ms);8558.35
+total number of iterations;1000
 latency (ms);8.13
-throughput;123.06
+throughput;123.04
 
