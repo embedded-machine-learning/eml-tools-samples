@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<annotations>
+  <filename>american_bulldog_126.jpg</filename>
+  <folder/>
+  <size>
+    <width>353</width>
+    <height>500</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>cat</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <score>0.69931376</score>
+    <bndbox>
+      <xmin>238</xmin>
+      <ymin>0</ymin>
+      <xmax>349</xmax>
+      <ymax>481</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>cat</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <score>0.62379456</score>
+    <bndbox>
+      <xmin>4</xmin>
+      <ymin>4</ymin>
+      <xmax>103</xmax>
+      <ymax>419</ymax>
+    </bndbox>
+  </object>
+</annotations>

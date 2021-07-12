@@ -20,11 +20,11 @@ number of parallel infer requests;1
 duration (ms);0
 
 Execution results
-read network time (ms);89.82
-load network time (ms);530.25
-first inference time (ms);11.45
-total execution time (ms);8558.35
+read network time (ms);340.85
+load network time (ms);1953.05
+first inference time (ms);48.81
+total execution time (ms);28154.99
 total number of iterations;1000
-latency (ms);8.13
-throughput;123.04
+latency (ms);25.56
+throughput;39.12
 

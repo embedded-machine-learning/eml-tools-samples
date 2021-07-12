@@ -1,0 +1,4 @@
+images/oxford_pets/Abyssinian_10.jpg 72,105,288,291,0
+images/oxford_pets/Abyssinian_11.jpg 43,57,94,105,0
+images/oxford_pets/Abyssinian_12.jpg 94,83,211,190,0
+images/oxford_pets/Abyssinian_13.jpg 145,25,218,96,0

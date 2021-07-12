@@ -1,0 +1,30 @@
+Command line parameters
+--path_to_model;exported-models-openvino/tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP16/saved_model.xml
+-d;CPU
+-b;1
+-api;sync
+-niter;1000
+-pc;
+-nireq;1
+--report_type;average_counters
+--report_folder;results/tf2oda_ssdmobilenetv2_320x256_pedestrian_OVFP16/Inteli7dp3510/OpenVino
+
+Configuration setup
+topology;saved_model
+target device;CPU
+API;sync
+precision;UNSPECIFIED
+batch size;1
+number of iterations;1000
+number of parallel infer requests;1
+duration (ms);0
+
+Execution results
+read network time (ms);140.64
+load network time (ms);806.88
+first inference time (ms);18.74
+total execution time (ms);10198.67
+total number of iterations;1000
+latency (ms);9.27
+throughput;107.88
+

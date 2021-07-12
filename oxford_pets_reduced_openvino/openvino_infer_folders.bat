@@ -83,8 +83,8 @@ echo # Convert Latencies
 echo #====================================#
 echo "Add measured latencies to result table"
 python %SCRIPTPREFIX%\hardwaremodules\openvino\openvino_latency_parser.py ^
---avg_rep results/%MODELNAME%/%HARDWARENAME%/openvino\benchmark_average_counters_report_saved_model_%HARDWARETYPE%_%APIMODE%.csv ^
---inf_rep results/%MODELNAME%/%HARDWARENAME%/openvino\benchmark_report_saved_model_%HARDWARETYPE%_%APIMODE%.csv ^
+--avg_rep results/%MODELNAME%/%HARDWARENAME%/openvino\benchmark_average_counters_report_%HARDWARETYPE%_%APIMODE%.csv ^
+--inf_rep results/%MODELNAME%/%HARDWARENAME%/openvino\benchmark_report_%HARDWARETYPE%_%APIMODE%.csv ^
 --output_path results/latency.csv ^
 --hardware_name %HARDWARENAME%
 ::--save_new #Always append
@@ -126,6 +126,15 @@ python %SCRIPTPREFIX%\inference_evaluation\objdet_pycoco_evaluation.py ^
 --output_file="results/performance.csv" ^
 --model_name=%MODELNAME% ^
 --hardware_name=%HARDWARENAME%_%HARDWARETYPE%
+
+echo #====================================#
+echo # Merge results to one result table
+echo #====================================#
+echo merge latency and evaluation metrics
+python %SCRIPTPREFIX%\inference_evaluation\merge_results.py ^
+--latency_file="results/latency.csv" ^
+--coco_eval_file="results/performance.csv" ^
+--output_file="results/combined_results.csv"
 
 echo "Inference finished"
 goto :eof

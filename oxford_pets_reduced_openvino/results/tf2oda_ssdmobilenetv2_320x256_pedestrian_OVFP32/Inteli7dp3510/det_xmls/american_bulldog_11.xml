@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<annotations>
+  <filename>american_bulldog_11.jpg</filename>
+  <folder/>
+  <size>
+    <width>500</width>
+    <height>375</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>cat</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <score>0.59519887</score>
+    <bndbox>
+      <xmin>257</xmin>
+      <ymin>71</ymin>
+      <xmax>321</xmax>
+      <ymax>295</ymax>
+    </bndbox>
+  </object>
+</annotations>
