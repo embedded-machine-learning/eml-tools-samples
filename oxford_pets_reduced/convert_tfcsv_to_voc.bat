@@ -6,7 +6,7 @@ echo #==============================================#
 set USERNAME=wendt
 set USEREMAIL=alexander.wendt@tuwien.ac.at
 set MODELNAME=ssd_mobilenet_v2_R300x300_D100_coco17_pets
-set PYTHONENV=tf24
+set PYTHONENV=tf26
 ::set SCRIPTPREFIX=..\..\scripts-and-guides\scripts
 set SCRIPTPREFIX=..\..\..\
 set LABELMAP=pets_label_map.pbtxt

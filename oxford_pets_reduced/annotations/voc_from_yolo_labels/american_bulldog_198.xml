@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<annotation>
+    <filename>american_bulldog_198.jpg</filename>
+    <size>
+        <width>500</width>
+        <height>338</height>
+        <depth>3</depth>
+    </size>
+    <object>
+        <name>dog</name>
+        <bndbox>
+            <xmin>159</xmin>
+            <ymin>11</ymin>
+            <xmax>390</xmax>
+            <ymax>185</ymax>
+        </bndbox>
+    </object>
+</annotation>

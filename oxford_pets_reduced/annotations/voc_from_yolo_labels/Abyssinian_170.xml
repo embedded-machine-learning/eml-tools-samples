@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<annotation>
+    <filename>Abyssinian_170.jpg</filename>
+    <size>
+        <width>1600</width>
+        <height>1200</height>
+        <depth>3</depth>
+    </size>
+    <object>
+        <name>cat</name>
+        <bndbox>
+            <xmin>899</xmin>
+            <ymin>208</ymin>
+            <xmax>1114</xmax>
+            <ymax>457</ymax>
+        </bndbox>
+    </object>
+</annotation>
